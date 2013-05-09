@@ -1,6 +1,7 @@
 package pieces;
 
 
+import gameBoard.GameBoard;
 import gameBoard.Location;
 import gameBoard.LocationList;
 
@@ -11,9 +12,11 @@ public abstract class Piece implements MovableThings {
 	protected Location location;
 	protected final Color color;
 
-	public Piece(Location location,Color color){
+	public Piece(Location location,Color color,GameBoard gameBoard){
 		this.location = location;
 		this.color = color;
+		gameBoard.getSquare(location).setPiece(this);
+		
 		
 	}
 	

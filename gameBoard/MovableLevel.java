@@ -4,7 +4,7 @@ import java.awt.Color;
 
 import pieces.MovableThings;
 
-public class MovableLevel extends Level implements MovableThings{
+public class MovableLevel extends Level/* implements MovableThings*/{
 	public MovableLevel(Location locationFirstSquare){
 		super(2,2,locationFirstSquare);
 	}
@@ -55,8 +55,8 @@ public class MovableLevel extends Level implements MovableThings{
 		}
 		return isMovable;
 	}
-	public LocationList possibleMoove(){
-		/* TODO */
+	/*public LocationList possibleMoove(){
+		TODO 
 	}
 	public boolean moove(Location newLocation,LocationList locationList){
 		if(locationList.isIn(newLocation))
@@ -65,6 +65,6 @@ public class MovableLevel extends Level implements MovableThings{
 			return true;
 		}
 		return false;
-	}
+	}*/
 
 }

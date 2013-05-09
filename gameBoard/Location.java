@@ -34,7 +34,15 @@ public class Location {
 			return true;
 		return false;
 	}
-	
-	
+	@Override
+	public String toString() {
+		
+		return new String (""+line+"."+column+"."+height+"  ");
+	}
+	public void add(int line,int column,int height){
+		this.line+=line;
+		this.column+=column;
+		this.height+=height;
+	}
 
 }
